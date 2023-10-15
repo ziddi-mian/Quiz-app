@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Modal -->
+    <div id="username-modal" class="modal">
+      <div class="modal-content">
+        <h2>Enter Your Full Name</h2>
+        <input type="text" id="username-input" placeholder="Username" autocomplete="off"/>
+        <button id="username-submit">Submit</button>
+      </div>
+    </div>
+
+    <div id="quiz-container">
+      <h1>Quiz App</h1>
+      <div class="user-data">
+        <p id="currentuser"></p>
+        <p id="question-number"></p>
+      </div>
+      <div id="question-container"></div>
+      <div id="options-container"></div>
+      <button id="next-btn">NEXT</button>
+      <div id="score-container"></div>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
